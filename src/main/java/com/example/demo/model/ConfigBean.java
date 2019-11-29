@@ -13,6 +13,15 @@ import org.springframework.stereotype.Component;
 public class ConfigBean {
     private String name;
     private String title;
+    private String wholeTitle;
+
+    public String getWholeTitle() {
+        return wholeTitle;
+    }
+
+    public void setWholeTitle(String wholeTitle) {
+        this.wholeTitle = wholeTitle;
+    }
 
     public String getName() {
         return name;

@@ -1,0 +1,8 @@
+server:
+  port: 8081
+
+mrbird:
+   blog:
+     name: mrbird's blogs
+     title: Spring Boot
+     wholeTitle: ${mrbird.blog.name}--${mrbird.blog.title}

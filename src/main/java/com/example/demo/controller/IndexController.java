@@ -24,19 +24,19 @@ public class IndexController {
     @Autowired
     private TestConfigBean testConfigBean;
 
-    @RequestMapping("/index")
-    String index() {
+    @RequestMapping("/test")
+    String test() {
         return blogProperties.getName()+"——"+blogProperties.getTitle();
     }
 
 
-    @RequestMapping("/index2")
-    String index2() {
-        return configBean.getName()+"——"+configBean.getTitle();
+    @RequestMapping("/test2")
+    String test2() {
+        return configBean.getName()+"——"+configBean.getTitle()+"——"+configBean.getWholeTitle();
     }
 
-    @RequestMapping("/index3")
-    String index3() {
+    @RequestMapping("/test3")
+    String test3() {
         return testConfigBean.getName()+"——"+testConfigBean.getAge();
     }
 }
