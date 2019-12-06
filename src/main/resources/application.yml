@@ -50,8 +50,8 @@ spring:
          # 是否能够重置数据
          reset-enable: false
          # 需要账号密码才能访问控制台
-#         login-username: druid
-#         login-password: druid123
+         login-username: druid
+         login-password: druid123
          # IP白名单
          # allow: 127.0.0.1
          #　IP黑名单（共同存在时，deny优先于allow）
@@ -62,7 +62,16 @@ spring:
          stat:
            log-slow-sql: true
 
+  thymeleaf:
+     #开启模板缓存（默认值：true）
+     cache: false
+#  mvc:
+#    view:
+#       #在构建URL时添加到视图名称前的前缀（默认值：classpath:/templates/）
+#       prefix: classpath:/templates/
+#       #在构建URL时添加到视图名称后的后缀（默认值：.html）
+#       suffix: .html
 
   profiles:
-    active: prod
+     active: prod
 
