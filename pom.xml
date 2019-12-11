@@ -52,6 +52,12 @@
 			<version>8.0.17</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>4.0</version>
+		</dependency>
+
 		<!--集成druid连接池-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -74,6 +80,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
+
+		<!-- spring-boot redis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.61</version>
+		</dependency>
+
 
 	</dependencies>
 

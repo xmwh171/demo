@@ -8,6 +8,17 @@ public class Student implements Serializable{
 	private String sno;
 	private String name;
 	private String sex;
+
+	public Student(String sno, String name) {
+		this.sno = sno;
+		this.name = name;
+	}
+
+	public Student(String sno, String name, String sex) {
+		this.sno = sno;
+		this.name = name;
+		this.sex = sex;
+	}
 	public String getSno() {
 		return sno;
 	}
@@ -26,6 +37,13 @@ public class Student implements Serializable{
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Student{" +
+				"sno='" + sno + '\'' +
+				", name='" + name + '\'' +
+				", sex='" + sex + '\'' +
+				'}';
+	}
 }
